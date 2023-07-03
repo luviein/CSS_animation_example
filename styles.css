@@ -1,0 +1,19 @@
+@keyframes bounce {
+    from {
+        transform: translate3d(0 , 0 , 0); /* X, Y, Z axis*/
+    }
+
+    to {
+        transform: translate3d(500px, 150px, 2300px);
+    }
+}
+
+#ball {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    animation: bounce 1s linear;
+    animation-direction: alternate; /* Plays animation in reverse when completed */
+    animation-iteration-count: infinite; /* Plays animation count infintely */
+}
